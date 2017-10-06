@@ -14,8 +14,8 @@ const app = new Vue({
         : require('./pages/404.vue')
     }
   },
-  render (h) {
-    return h(this.ViewComponent)
+  render (createElement) {
+    return createElement(this.ViewComponent)
   }
 })
 
